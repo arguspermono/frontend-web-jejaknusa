@@ -1,0 +1,72 @@
+// src/js/main.js
+import { initTheme, toggleTheme, applyTheme } from './utils/theme.js';
+import { initNavbar } from './components/navbar.js';
+import { initFooter } from './components/footer.js';
+import { applyTranslations, setLang } from './utils/translations.js';
+
+// Bind to window for global inline event handlers or components (like navbar.js)
+window.toggleTheme = toggleTheme;
+window.applyTheme = applyTheme;
+window.setLang = (lang) => {
+  setLang(lang);
+  const langDropdown = document.getElementById('lang-dropdown');
+  if (langDropdown) {
+    langDropdown.classList.add('hidden');
+  }
+};
+
+// Scroll Reveal Animation
+function scrollReveal() {
+  const reveals = document.querySelectorAll('.reveal');
+  reveals.forEach(el => {
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 80) {
+      el.classList.add('visible');
+    }
+  });
+}
+
+// Initialize on DOMContentLoaded
+document.addEventListener('DOMContentLoaded', () => {
+  // Initialize Theme
+  initTheme();
+
+  // Inject Reusable Components
+  initNavbar();
+  initFooter();
+
+  // Apply Language Translations
+  const currentLang = localStorage.getItem('lang') || 'id';
+  applyTranslations(currentLang);
+
+  // Set active link in mobile menu (if applicable)
+  const currentPath = window.location.pathname.split('/').pop() || 'home.html';
+  const mobileLinks = document.querySelectorAll('#mobile-menu .nav-link');
+  mobileLinks.forEach(link => {
+    const href = link.getAttribute('href');
+    if (href === currentPath) {
+      link.classList.add('text-brand-red');
+      link.classList.remove('text-gray-600', 'dark:text-gray-300');
+    } else {
+      link.classList.remove('text-brand-red');
+      link.classList.add('text-gray-600', 'dark:text-gray-300');
+    }
+  });
+
+  // Scroll reveal on load & scroll
+  window.addEventListener('scroll', scrollReveal, { passive: true });
+  scrollReveal();
+
+  // Contact Form Submission Handler (for About Us Page)
+  const contactForm = document.getElementById('contact-form');
+  if (contactForm) {
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      contactForm.classList.add('hidden');
+      const successMsg = document.getElementById('success-msg');
+      if (successMsg) {
+        successMsg.classList.remove('hidden');
+      }
+    });
+  }
+});
