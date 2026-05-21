@@ -100,7 +100,10 @@ export function initNavbar() {
 
   // Set Active Link based on pathname
   const rawPath = window.location.pathname.split('/').pop();
-  const currentPath = (!rawPath || rawPath === 'index.html') ? 'home.html' : rawPath;
+  let currentPath = (!rawPath || rawPath === 'index.html') ? 'home.html' : rawPath;
+  if (currentPath === 'about.html') {
+    currentPath = 'about_us.html';
+  }
   const navLinks = navbarContainer.querySelectorAll('.nav-link');
   navLinks.forEach(link => {
     const href = link.getAttribute('href');

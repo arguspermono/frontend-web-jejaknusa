@@ -41,7 +41,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Set active link in mobile menu (if applicable)
   const rawPath = window.location.pathname.split('/').pop();
-  const currentPath = (!rawPath || rawPath === 'index.html') ? 'home.html' : rawPath;
+  let currentPath = (!rawPath || rawPath === 'index.html') ? 'home.html' : rawPath;
+  if (currentPath === 'about.html') {
+    currentPath = 'about_us.html';
+  }
   const mobileLinks = document.querySelectorAll('#mobile-menu .nav-link');
   mobileLinks.forEach(link => {
     const href = link.getAttribute('href');
