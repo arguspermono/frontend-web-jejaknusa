@@ -7,6 +7,7 @@ export default defineConfig({
     outDir: 'dist',
     rollupOptions: {
       input: {
+        index: resolve(__dirname, 'index.html'),
         home: resolve(__dirname, 'home.html'),
         destination: resolve(__dirname, 'destination.html'),
         about: resolve(__dirname, 'about_us.html'),
@@ -15,7 +16,7 @@ export default defineConfig({
     },
   },
   server: {
-    open: '/home.html',
+    open: '/index.html',
     port: 3000,
   },
 });

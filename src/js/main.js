@@ -40,7 +40,8 @@ document.addEventListener('DOMContentLoaded', () => {
   applyTranslations(currentLang);
 
   // Set active link in mobile menu (if applicable)
-  const currentPath = window.location.pathname.split('/').pop() || 'home.html';
+  const rawPath = window.location.pathname.split('/').pop();
+  const currentPath = (!rawPath || rawPath === 'index.html') ? 'home.html' : rawPath;
   const mobileLinks = document.querySelectorAll('#mobile-menu .nav-link');
   mobileLinks.forEach(link => {
     const href = link.getAttribute('href');
