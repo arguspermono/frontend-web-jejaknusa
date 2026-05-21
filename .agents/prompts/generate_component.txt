@@ -1,0 +1,5 @@
+Act as a senior frontend developer. Generate a reusable HTML snippet for a [COMPONENT_NAME] component.
+
+Use Tailwind CSS for styling. Ensure it matches the UI design tokens defined in `.agents/standards/ui_design_tokens.md`.
+It must be responsive, mobile-first, and semantic.
+Provide the HTML code, and explain how to import or reuse it across multiple pages.
