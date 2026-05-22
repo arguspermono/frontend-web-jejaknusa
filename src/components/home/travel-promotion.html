@@ -1,0 +1,44 @@
+<section class="relative min-h-[800px] sm:min-h-[900px] flex items-center overflow-hidden">
+    <!-- Background Image -->
+    <img src="/src/assets/img/RajaAmpat.png"
+        alt="Raja Ampat Islands" class="absolute inset-0 w-full h-full object-cover object-bottom" />
+    
+    <!-- Gradient Overlay to blend with the #F8F6F0 background above it -->
+    <div class="absolute inset-0 bg-gradient-to-b from-[#F8F6F0] via-[#F8F6F0]/60 to-transparent"></div>
+     <div class="absolute inset-x-0 bottom-0 h-60 bg-gradient-to-t from-[#F8F6F0]/100 to-transparent"></div>
+    <div class="absolute inset-0 bg-gradient-to-r from-[#F8F6F0]/60 via-transparent to-transparent w-1/2"></div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full h-full flex flex-col justify-center py-24">
+        
+        <!-- Main Text Content -->
+        <div class="max-w-2xl reveal">
+            <h2 class="text-5xl sm:text-7xl lg:text-[5.5rem] font-black text-black uppercase leading-[0.9] tracking-tighter mb-8"
+                data-i18n="travel_heading">
+                TRAVEL AND<br />ENJOY YOUR<br />HOLIDAY
+            </h2>
+            <p class="text-black/80 font-medium leading-relaxed text-sm sm:text-base md:text-lg max-w-lg"
+                data-i18n="travel_desc">
+                Kepulauan Raja Ampat adalah gugusan pulau yang terletak di bagian barat Semenanjung Kepala Burung di pulau Guinea. Pulau ini definisi nyata dari surga di Bumi. Terletak di ujung barat laut Semenanjung Kepala Burung di Papua Barat Daya, kepulauan ini memiliki kekayaan laut paling melimpah di dunia.
+            </p>
+        </div>
+
+        <!-- Video Thumbnail at Bottom Right -->
+        <div class="absolute bottom-12 right-4 sm:right-12 lg:right-24 reveal">
+            <div class="relative w-64 sm:w-80 group cursor-pointer">
+                <img src="https://images.unsplash.com/photo-1452441271666-5d998aa2f6cc?w=600&q=80"
+                    alt="Traveler taking a photo" class="w-full h-auto aspect-video object-cover shadow-2xl transition-transform duration-500 group-hover:scale-105" />
+                
+                <!-- Play Button Overlay -->
+                <div class="absolute inset-0 flex items-center justify-center">
+                    <div class="w-12 h-12 rounded-full bg-white/20 backdrop-blur-sm border border-white/40 flex items-center justify-center group-hover:bg-brand-red transition-colors duration-300">
+                        <svg class="w-6 h-6 text-white ml-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M4 4l12 6-12 6z"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <p class="text-black text-xs sm:text-sm font-semibold mt-3 text-right drop-shadow-md">youtube.com/watch?v=BJxz</p>
+        </div>
+
+    </div>
+</section>
