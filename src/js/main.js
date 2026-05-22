@@ -39,6 +39,18 @@ document.addEventListener('DOMContentLoaded', () => {
   const currentLang = localStorage.getItem('lang') || 'id';
   applyTranslations(currentLang);
 
+  // Initialize Home Components
+  if (window.location.pathname.endsWith('index.html') || window.location.pathname.endsWith('home.html') || window.location.pathname === '/' || window.location.pathname === '/web_frontend_jejaknusa/') {
+    import('./modules/home.js').then(module => {
+      module.initHomeComponents().then(() => {
+        // Re-run scroll reveal after injecting content
+        scrollReveal();
+        // Re-apply translations for the injected content
+        applyTranslations(currentLang);
+      });
+    });
+  }
+
   // Set active link in mobile menu (if applicable)
   const rawPath = window.location.pathname.split('/').pop();
   let currentPath = (!rawPath || rawPath === 'index.html') ? 'home.html' : rawPath;

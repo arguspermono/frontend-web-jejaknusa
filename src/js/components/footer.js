@@ -5,84 +5,78 @@ export function initFooter() {
   if (!footerContainer) return;
 
   footerContainer.innerHTML = `
-    <footer class="bg-white dark:bg-gray-950 border-t border-gray-200 dark:border-gray-800 pt-12 pb-6 transition-colors duration-300">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8 mb-10">
+    <footer class="relative bg-[#F2EDDF] dark:bg-black overflow-hidden transition-colors duration-300">
+      <div class="relative z-10 max-w-7xl mx-auto px-8 sm:px-12 lg:px-16 pt-16 pb-8">
+        <!-- Link Columns -->
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-10 mb-16">
 
           <!-- Company -->
           <div>
-            <h4 class="text-sm font-bold text-gray-900 dark:text-white mb-4 uppercase tracking-wide" data-i18n="footer_company">Company</h4>
-            <ul class="space-y-2">
-              <li><a href="about_us.html" class="text-xs text-gray-500 dark:text-gray-400 hover:text-brand-red dark:hover:text-brand-red transition-colors" data-i18n="footer_about">About Us</a></li>
-              <li><a href="#" class="text-xs text-gray-500 dark:text-gray-400 hover:text-brand-red transition-colors" data-i18n="footer_team">Meet Our Team</a></li>
-              <li><a href="#" class="text-xs text-gray-500 dark:text-gray-400 hover:text-brand-red transition-colors" data-i18n="footer_careers">Careers</a></li>
-              <li><a href="about_us.html" class="text-xs text-gray-500 dark:text-gray-400 hover:text-brand-red transition-colors" data-i18n="footer_contact">Contact Us</a></li>
-              <li><a href="#" class="text-xs text-gray-500 dark:text-gray-400 hover:text-brand-red transition-colors" data-i18n="footer_sitemap">Sitemap</a></li>
+            <h4 class="text-base font-bold text-gray-900 dark:text-white mb-5">Company</h4>
+            <ul class="space-y-3">
+              <li><a href="about_us.html" class="text-sm text-gray-700 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">Abaout</a></li>
+              <li><a href="#" class="text-sm text-gray-700 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">Management team</a></li>
+              <li><a href="#" class="text-sm text-gray-700 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">Corporate</a></li>
+              <li><a href="about_us.html" class="text-sm text-gray-700 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">Contact Us</a></li>
+              <li><a href="#" class="text-sm text-gray-700 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">Careers</a></li>
             </ul>
           </div>
 
           <!-- News & Event -->
           <div>
-            <h4 class="text-sm font-bold text-gray-900 dark:text-white mb-4 uppercase tracking-wide" data-i18n="footer_news">News & Event</h4>
-            <ul class="space-y-2">
-              <li><a href="#" class="text-xs text-gray-500 dark:text-gray-400 hover:text-brand-red transition-colors" data-i18n="footer_events">Events</a></li>
-              <li><a href="#" class="text-xs text-gray-500 dark:text-gray-400 hover:text-brand-red transition-colors" data-i18n="footer_newslink">News</a></li>
-              <li><a href="#" class="text-xs text-gray-500 dark:text-gray-400 hover:text-brand-red transition-colors" data-i18n="footer_media">Media Kontak</a></li>
+            <h4 class="text-base font-bold text-gray-900 dark:text-white mb-5">News &amp; Event</h4>
+            <ul class="space-y-3">
+              <li><a href="#" class="text-sm text-gray-700 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">Events</a></li>
+              <li><a href="#" class="text-sm text-gray-700 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">News</a></li>
+              <li><a href="#" class="text-sm text-gray-700 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">Media Library</a></li>
             </ul>
           </div>
 
           <!-- Resources -->
           <div>
-            <h4 class="text-sm font-bold text-gray-900 dark:text-white mb-4 uppercase tracking-wide" data-i18n="footer_resources">Resources</h4>
-            <ul class="space-y-2">
-              <li><a href="#" class="text-xs text-gray-500 dark:text-gray-400 hover:text-brand-red transition-colors" data-i18n="footer_help">Help Center</a></li>
-              <li><a href="#" class="text-xs text-gray-500 dark:text-gray-400 hover:text-brand-red transition-colors" data-i18n="footer_guide">Travel Guide</a></li>
-              <li><a href="#" class="text-xs text-gray-500 dark:text-gray-400 hover:text-brand-red transition-colors" data-i18n="footer_web">Website</a></li>
-              <li><a href="#" class="text-xs text-gray-500 dark:text-gray-400 hover:text-brand-red transition-colors" data-i18n="footer_faq">Tanya & Jawab</a></li>
+            <h4 class="text-base font-bold text-gray-900 dark:text-white mb-5">Resources</h4>
+            <ul class="space-y-3">
+              <li><a href="#" class="text-sm text-gray-700 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">Developer Central</a></li>
+              <li><a href="#" class="text-sm text-gray-700 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">Case Studies</a></li>
+              <li><a href="#" class="text-sm text-gray-700 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">Webinars</a></li>
+              <li><a href="#" class="text-sm text-gray-700 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">Explore Resources</a></li>
             </ul>
           </div>
 
           <!-- Partners -->
           <div>
-            <h4 class="text-sm font-bold text-gray-900 dark:text-white mb-4 uppercase tracking-wide" data-i18n="footer_partners">Partners</h4>
-            <ul class="space-y-2">
-              <li><a href="#" class="text-xs text-gray-500 dark:text-gray-400 hover:text-brand-red transition-colors" data-i18n="footer_hotel">Hotels</a></li>
-              <li><a href="#" class="text-xs text-gray-500 dark:text-gray-400 hover:text-brand-red transition-colors" data-i18n="footer_airlines">Airlines</a></li>
-              <li><a href="#" class="text-xs text-gray-500 dark:text-gray-400 hover:text-brand-red transition-colors" data-i18n="footer_tours">Tour Operators</a></li>
-              <li><a href="#" class="text-xs text-gray-500 dark:text-gray-400 hover:text-brand-red transition-colors" data-i18n="footer_program">Program</a></li>
+            <h4 class="text-base font-bold text-gray-900 dark:text-white mb-5">Partners</h4>
+            <ul class="space-y-3">
+              <li><a href="#" class="text-sm text-gray-700 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">Partner Hub</a></li>
+              <li><a href="#" class="text-sm text-gray-700 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">Distributors</a></li>
+              <li><a href="#" class="text-sm text-gray-700 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">Program</a></li>
             </ul>
           </div>
 
           <!-- Investor -->
           <div>
-            <h4 class="text-sm font-bold text-gray-900 dark:text-white mb-4 uppercase tracking-wide" data-i18n="footer_investor">Investor</h4>
-            <ul class="space-y-2">
-              <li><a href="#" class="text-xs text-gray-500 dark:text-gray-400 hover:text-brand-red transition-colors" data-i18n="footer_annual">Annual Reports</a></li>
-              <li><a href="#" class="text-xs text-gray-500 dark:text-gray-400 hover:text-brand-red transition-colors" data-i18n="footer_stocks">Stock Info</a></li>
-              <li><a href="#" class="text-xs text-gray-500 dark:text-gray-400 hover:text-brand-red transition-colors" data-i18n="footer_ir">Investor Relations</a></li>
-              <li><a href="#" class="text-xs text-gray-500 dark:text-gray-400 hover:text-brand-red transition-colors" data-i18n="footer_blog">Blog</a></li>
+            <h4 class="text-base font-bold text-gray-900 dark:text-white mb-5">Investor</h4>
+            <ul class="space-y-3">
+              <li><a href="#" class="text-sm text-gray-700 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">Investor Relations</a></li>
+              <li><a href="#" class="text-sm text-gray-700 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">Financial</a></li>
+              <li><a href="#" class="text-sm text-gray-700 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">Board Information</a></li>
+              <li><a href="#" class="text-sm text-gray-700 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">SEC Filing</a></li>
             </ul>
           </div>
 
         </div>
 
         <!-- Bottom Bar -->
-        <div class="border-t border-gray-200 dark:border-gray-800 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <div class="flex items-center gap-2">
-            <div class="w-6 h-6 bg-brand-red rounded-full flex items-center justify-center">
-              <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-              </svg>
-            </div>
-            <span class="text-xs font-bold text-gray-900 dark:text-white uppercase">JEJAKNUSA</span>
-          </div>
-          <p class="text-xs text-gray-400 dark:text-gray-600" data-i18n="footer_copy">© 2025 JejakNusa Travel. All rights reserved.</p>
-          <div class="flex items-center gap-4">
-            <a href="#" class="text-xs text-gray-400 hover:text-brand-red transition-colors" data-i18n="footer_privacy">Privacy Policy</a>
-            <a href="#" class="text-xs text-gray-400 hover:text-brand-red transition-colors" data-i18n="footer_terms">Terms of Service</a>
-          </div>
-        </div>
-      </div>
+         <div class="border-t border-gray-400/40 dark:border-gray-800 pt-8 flex flex-col items-center gap-3 text-center">
+           <div class="flex flex-wrap items-center justify-center gap-x-3 gap-y-1 text-sm text-gray-700 dark:text-gray-400">
+             <a href="#" class="hover:text-black dark:hover:text-white transition-colors">Terms of Service</a>
+             <span class="text-gray-400 dark:text-gray-600">|</span>
+             <a href="#" class="hover:text-black dark:hover:text-white transition-colors">Privacy Policy</a>
+             <span class="text-gray-400 dark:text-gray-600">|</span>
+             <a href="#" class="hover:text-black dark:hover:text-white transition-colors">Cookies Policy</a>
+           </div>
+           <p class="text-sm text-gray-600 dark:text-gray-500">@ 2025  JejakNusa Traveling, Inc</p>
+         </div>
     </footer>
   `;
 }
