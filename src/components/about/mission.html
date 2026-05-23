@@ -1,32 +1,83 @@
-<!-- About Us — Mission Section -->
-<section class="py-16 bg-[#F8F6F0] dark:bg-gray-950 transition-colors duration-300">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="relative flex flex-col md:flex-row items-start md:items-stretch gap-0">
+<!-- About Us — Mission & Values Section -->
+<section class="py-20 bg-[#F8F6F0] dark:bg-gray-950 transition-colors duration-300">
+  <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
 
-            <!-- Green card (left, slightly higher) -->
-            <div class="relative z-10 w-full md:w-1/2 bg-[#4A5320] text-white p-10 lg:p-14 flex flex-col justify-center reveal">
-                <h2 class="text-3xl sm:text-4xl font-black italic mb-5 text-white">My Mission</h2>
-                <p class="text-sm sm:text-base leading-relaxed text-white/90">
-                    Lorem ipsum dolor sit amet consectetur. Mi ult massa ut feugiat morbi amet
-                    suspendisse. Suspicit at elenentum et aliquet sed viverra euismod. Amet egestas
-                    duque auctor mauris ut. Ac eu ullamcorper lorem lorem.
-                </p>
-            </div>
-
-            <!-- Overlapping image (right, shifted left to overlap) -->
-            <div class="relative w-full md:w-1/2 md:-ml-10 mt-6 md:mt-0 reveal flex items-start justify-center md:justify-start">
-                <!-- Slightly bigger image overlapping the green card -->
-                <div class="relative w-[85%] md:w-[110%] aspect-[4/3] overflow-hidden shadow-2xl">
-                    <img
-                        src="https://images.unsplash.com/photo-1573496799652-408c2ac9fe98?w=800&q=80"
-                        alt="Mission — professional woman at laptop"
-                        class="w-full h-full object-cover"
-                    />
-                    <!-- Subtle overlay -->
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-                </div>
-            </div>
-
-        </div>
+    <!-- Section label -->
+    <div class="flex items-center gap-3 mb-4 reveal">
+      <div class="h-px w-10 bg-[#4A5320] dark:bg-[#6B7A2A]"></div>
+      <span class="text-xs font-bold tracking-[0.2em] uppercase text-[#4A5320] dark:text-[#c5d06a]">Who We Are</span>
     </div>
+
+    <!-- Two column layout -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+
+      <!-- Left — Image block -->
+      <div class="relative reveal">
+        <!-- Main image -->
+        <div class="relative aspect-[4/5] overflow-hidden rounded-2xl shadow-2xl">
+          <img
+            src="https://images.unsplash.com/photo-1604999333679-b86d54738315?w=900&q=80"
+            alt="Team exploring Indonesian destinations"
+            class="w-full h-full object-cover"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+        </div>
+
+        <!-- Floating stat card -->
+        <div class="absolute -bottom-6 -right-4 sm:-right-8 bg-[#4A5320] text-white rounded-xl p-5 shadow-2xl">
+          <p class="text-3xl font-black leading-none">500+</p>
+          <p class="text-xs text-white/75 mt-1 tracking-wider uppercase">Destinations</p>
+        </div>
+
+        <!-- Accent dot grid -->
+        <div class="absolute -top-6 -left-6 w-24 h-24 opacity-20 dark:opacity-10"
+             style="background-image: radial-gradient(#4A5320 1px, transparent 1px); background-size: 8px 8px;">
+        </div>
+      </div>
+
+      <!-- Right — Text block -->
+      <div class="reveal text-justify">
+        <h2 class="text-4xl sm:text-5xl font-black tracking-tight text-gray-900 dark:text-white leading-tight mb-6">
+          Connecting People to<br/>
+          <span class="text-[#4A5320] dark:text-[#c5d06a] italic">Indonesia's Beauty</span>
+        </h2>
+
+        <p class="text-base text-gray-600 dark:text-gray-400 leading-relaxed mb-6">
+          JejakNusa was born from a deep love for the Indonesian archipelago. We believe every corner
+          of this vast nation holds stories waiting to be discovered from the volcanic peaks of Java
+          to the untouched shores of Papua.
+        </p>
+
+        <p class="text-base text-gray-600 dark:text-gray-400 leading-relaxed mb-10">
+          Our mission is to make these hidden gems accessible for every traveler, while supporting
+          local communities and preserving the natural wonders that make Indonesia unique.
+        </p>
+
+        <!-- Values grid -->
+        <div class="grid grid-cols-2 gap-4">
+          <div class="flex flex-col gap-1 p-4 rounded-xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 shadow-sm">
+            <span class="text-xl">🌿</span>
+            <p class="font-bold text-sm text-gray-900 dark:text-white">Sustainable Travel</p>
+            <p class="text-xs text-gray-500 dark:text-gray-400">Protect what we explore</p>
+          </div>
+          <div class="flex flex-col gap-1 p-4 rounded-xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 shadow-sm">
+            <span class="text-xl">🤝</span>
+            <p class="font-bold text-sm text-gray-900 dark:text-white">Local First</p>
+            <p class="text-xs text-gray-500 dark:text-gray-400">Empower communities</p>
+          </div>
+          <div class="flex flex-col gap-1 p-4 rounded-xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 shadow-sm">
+            <span class="text-xl">🧭</span>
+            <p class="font-bold text-sm text-gray-900 dark:text-white">Expert Guidance</p>
+            <p class="text-xs text-gray-500 dark:text-gray-400">Curated experiences</p>
+          </div>
+          <div class="flex flex-col gap-1 p-4 rounded-xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 shadow-sm">
+            <span class="text-xl">✨</span>
+            <p class="font-bold text-sm text-gray-900 dark:text-white">Memorable Moments</p>
+            <p class="text-xs text-gray-500 dark:text-gray-400">Stories for a lifetime</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </section>
