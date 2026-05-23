@@ -51,6 +51,16 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // Initialize About Us Components
+  if (window.location.pathname.endsWith('about_us.html') || window.location.pathname.endsWith('about.html')) {
+    import('./modules/about.js').then(module => {
+      module.initAboutComponents().then(() => {
+        scrollReveal();
+        applyTranslations(currentLang);
+      });
+    });
+  }
+
   // Set active link in mobile menu (if applicable)
   const rawPath = window.location.pathname.split('/').pop();
   let currentPath = (!rawPath || rawPath === 'index.html') ? 'home.html' : rawPath;

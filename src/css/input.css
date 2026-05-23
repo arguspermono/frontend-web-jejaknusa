@@ -19,16 +19,36 @@
     @apply transition-colors duration-300 ease-in-out;
   }
 
-  /* Custom scrollbar */
+  /* Custom scrollbar — JejakNusa palette */
   ::-webkit-scrollbar {
-    width: 6px;
+    width: 7px;
   }
   ::-webkit-scrollbar-track {
-    background: transparent;
+    background: #EDE9DF;
   }
   ::-webkit-scrollbar-thumb {
-    background: #E53935;
-    border-radius: 3px;
+    background: #4A5320;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #2E3314;
+  }
+  .dark ::-webkit-scrollbar-track {
+    background: #111827;
+  }
+  .dark ::-webkit-scrollbar-thumb {
+    background: #6B7A2A;
+  }
+  .dark ::-webkit-scrollbar-thumb:hover {
+    background: #8B9C38;
+  }
+  /* Firefox scrollbar */
+  * {
+    scrollbar-color: #4A5320 #EDE9DF;
+    scrollbar-width: thin;
+  }
+  .dark * {
+    scrollbar-color: #6B7A2A #111827;
   }
 }
 
