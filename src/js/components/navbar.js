@@ -28,7 +28,7 @@ export function initNavbar() {
           <!-- Desktop Nav Links -->
           <div class="hidden md:flex items-center gap-8">
             <a href="home.html" class="nav-link text-sm font-semibold text-gray-900 dark:text-white" data-i18n="nav_home">Beranda</a>
-            <a href="destination.html" class="nav-link text-sm font-semibold text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors" data-i18n="nav_destination">Destinasi</a>
+            <a href="destinations.html" class="nav-link text-sm font-semibold text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors" data-i18n="nav_destination">Destinasi</a>
             <a href="about_us.html" class="nav-link text-sm font-semibold text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors" data-i18n="nav_about">Tentang Kami</a>
           </div>
 
@@ -81,7 +81,7 @@ export function initNavbar() {
       <div id="mobile-menu" class="md:hidden bg-[#F8F6F0] dark:bg-black border-t border-gray-200 dark:border-gray-800">
         <div class="px-4 py-4 flex flex-col gap-4">
           <a href="home.html" class="nav-link text-sm font-semibold text-gray-600 dark:text-gray-300" data-i18n="nav_home">Beranda</a>
-          <a href="destination.html" class="nav-link text-sm font-semibold text-gray-600 dark:text-gray-300" data-i18n="nav_destination">Destinasi</a>
+          <a href="destinations.html" class="nav-link text-sm font-semibold text-gray-600 dark:text-gray-300" data-i18n="nav_destination">Destinasi</a>
           <a href="about_us.html" class="nav-link text-sm font-semibold text-gray-600 dark:text-gray-300" data-i18n="nav_about">Tentang Kami</a>
           <div class="flex items-center gap-4 pt-4 mt-2 border-t border-gray-200 dark:border-gray-800">
             <button id="mobile-lang-id" class="text-sm font-medium text-gray-600 dark:text-gray-300">🇮🇩 ID</button>
