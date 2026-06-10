@@ -1,0 +1,52 @@
+<!-- Destination — Content Section (Category Tabs + Grid) -->
+<section class="py-12 sm:py-16 bg-[#F8F6F0] dark:bg-gray-950 transition-colors duration-300">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <!-- Section header -->
+    <div class="mb-8 reveal">
+      <div class="flex items-center gap-3 mb-2">
+        <div class="h-px w-10 bg-[#4A5320] dark:bg-[#6B7A2A]"></div>
+        <span class="text-xs font-bold tracking-[0.2em] uppercase text-[#4A5320] dark:text-[#c5d06a]">Jelajahi</span>
+      </div>
+      <h2 class="text-3xl sm:text-4xl font-black text-gray-900 dark:text-white tracking-tight" data-i18n="dest_page_title">
+        Destinasi
+      </h2>
+    </div>
+
+    <!-- Category Tabs — horizontally scrollable on mobile -->
+    <div class="relative mb-8 sm:mb-10 reveal">
+      <!-- Right-edge fade to hint at scroll overflow -->
+      <div class="absolute right-0 top-0 bottom-2 w-10 bg-gradient-to-l from-[#F8F6F0] dark:from-gray-950 to-transparent z-10 pointer-events-none sm:hidden"></div>
+      <div
+        id="category-tabs"
+        class="flex gap-2 overflow-x-auto pb-2 scrollbar-hide pr-8 sm:pr-0 sm:flex-wrap"
+        role="tablist"
+        aria-label="Destination categories"
+      >
+        <!-- Populated by destination.js -->
+      </div>
+    </div>
+
+    <!-- Destination Grid -->
+    <div
+      id="destination-grid"
+      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6"
+      role="list"
+      aria-live="polite"
+    >
+      <!-- Populated by destination.js -->
+    </div>
+
+    <!-- Empty / No Results State -->
+    <div id="no-results" class="hidden text-center py-24">
+      <svg class="w-14 h-14 text-gray-200 dark:text-gray-800 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+          d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+      <p class="text-gray-400 dark:text-gray-600 font-medium text-sm" data-i18n="no_results">
+        Destinasi tidak ditemukan.
+      </p>
+    </div>
+
+  </div>
+</section>

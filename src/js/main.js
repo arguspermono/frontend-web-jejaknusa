@@ -51,6 +51,16 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // Initialize Destination Components
+  if (window.location.pathname.endsWith('destinations.html') || window.location.pathname.endsWith('destination.html')) {
+    import('./modules/destination.js').then(module => {
+      module.initDestinationComponents().then(() => {
+        scrollReveal();
+        applyTranslations(currentLang);
+      });
+    });
+  }
+
   // Initialize About Us Components
   if (window.location.pathname.endsWith('about_us.html') || window.location.pathname.endsWith('about.html')) {
     import('./modules/about.js').then(module => {
