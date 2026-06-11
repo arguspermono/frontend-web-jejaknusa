@@ -448,6 +448,15 @@ export async function initArticleComponents() {
     populateArticle(article, lang);
     applyTranslations(lang);
 
+    // Re-populate article content whenever language is switched
+    const prevSetLang = window.setLang;
+    window.setLang = (newLang) => {
+      prevSetLang(newLang);
+      populateArticle(article, newLang);
+      // Re-show reveal elements in the re-rendered body (user is already viewing them)
+      document.querySelectorAll('#art-body .reveal').forEach(el => el.classList.add('visible'));
+    };
+
   } catch (err) {
     console.error('Error loading article components:', err);
   }
