@@ -239,7 +239,8 @@ function buildCardHTML(dest) {
           </div>
 
           <!-- CTA Button -->
-          <button
+          <a
+            href="destination-detail.html?id=${dest.id}"
             class="group/btn flex items-center gap-1.5
                    bg-[#4A5320] hover:bg-[#3a4118] dark:bg-[#c5d06a] dark:hover:bg-[#b0ba56]
                    text-white dark:text-gray-900 text-xs font-bold
@@ -253,7 +254,7 @@ function buildCardHTML(dest) {
                  fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7" />
             </svg>
-          </button>
+          </a>
 
         </div>
       </div>
