@@ -5,7 +5,7 @@ export const translations = {
     // --- Navbar ---
     nav_home: 'Beranda',
     nav_destination: 'Destinasi',
-    nav_about: 'Hubungi Kami',
+    nav_about: 'Tentang Kami',
     toggle_mode: 'Mode Gelap',
 
     // --- Home Page ---
@@ -29,7 +29,7 @@ export const translations = {
     read_more: 'Selengkapnya',
 
     // --- About Us Page ---
-    about_page_title: 'Hubungi Kami',
+    about_page_title: 'Tentang Kami',
     about_page_sub: 'Kami siap membantu perjalanan impian Anda. Jangan ragu untuk menghubungi tim kami.',
     about_label: 'Tentang JejakNusa',
     about_heading: 'Platform Perjalanan Terpercaya untuk Menjelajahi Nusantara',
@@ -49,7 +49,7 @@ export const translations = {
     cmo_desc: 'Mengembangkan strategi pemasaran digital untuk menjangkau lebih banyak traveler Indonesia.',
     contact_label: 'Kontak',
     contact_heading: 'Mari Terhubung dengan Kami',
-    contact_desc: 'Punya pertanyaan, saran, atau ingin bekerjasama dengan kami? Jangan ragu untuk menghubungi kami.',
+    contact_desc: 'Punya pertanyaan, saran, atau ingin bekerjasama dengan kami? Jangan ragu untuk mengTentang Kami.',
     addr_title: 'Alamat',
     phone_title: 'Telepon',
     form_name: 'Nama Lengkap',
@@ -143,7 +143,7 @@ export const translations = {
     footer_about: 'Tentang Kami',
     footer_team: 'Tim Kami',
     footer_careers: 'Karir',
-    footer_contact: 'Hubungi Kami',
+    footer_contact: 'Tentang Kami',
     footer_sitemap: 'Peta Situs',
     footer_news: 'Berita & Acara',
     footer_events: 'Acara',
