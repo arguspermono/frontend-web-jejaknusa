@@ -408,19 +408,6 @@ function populateArticle(article, lang) {
   // Article body
   const bodyEl = document.getElementById('art-body');
   if (bodyEl) bodyEl.innerHTML = buildBodyHTML(article, lang) + buildRelatedHTML(article, lang);
-
-  // Sidebar
-  setId('art-sidebar-avatar', article.authorInitial);
-  setId('art-sidebar-author-name', article.author);
-  setId('art-sidebar-bio', c.bio);
-  setId('art-info-date', article.date);
-  setId('art-info-readtime', article.readTime[lang]);
-  setId('art-info-views', article.views);
-  setId('art-info-cat', c.category);
-
-  // Newsletter email placeholder
-  const emailInput = document.getElementById('newsletter-email');
-  if (emailInput) emailInput.placeholder = lang === 'en' ? 'Your email...' : 'Email kamu...';
 }
 
 // ─── Init ──────────────────────────────────────────────────────────────────────
