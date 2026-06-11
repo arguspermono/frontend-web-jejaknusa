@@ -10,6 +10,7 @@ export default defineConfig({
         index: resolve(__dirname, 'index.html'),
         about_us: resolve(__dirname, 'about_us.html'),
         destinations: resolve(__dirname, 'destinations.html'),
+        article: resolve(__dirname, 'article.html'),
       },
     },
   },
