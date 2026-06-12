@@ -830,8 +830,8 @@ export async function initDestinationDetailComponents() {
 
   try {
     const [heroRes, contentRes] = await Promise.all([
-      fetch('/src/components/destination-detail/hero.html'),
-      fetch('/src/components/destination-detail/content.html'),
+      fetch(`${import.meta.env.BASE_URL}components/destination-detail/hero.html`),
+      fetch(`${import.meta.env.BASE_URL}components/destination-detail/content.html`),
     ]);
 
     const heroHtml    = await heroRes.text();

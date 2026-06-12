@@ -3,10 +3,10 @@
 export async function initAboutComponents() {
   try {
     const [bannerRes, missionRes, teamsRes, galleryRes] = await Promise.all([
-      fetch('/src/components/about/banner.html'),
-      fetch('/src/components/about/mission.html'),
-      fetch('/src/components/about/teams.html'),
-      fetch('/src/components/about/gallery.html'),
+      fetch(`${import.meta.env.BASE_URL}components/about/banner.html`),
+      fetch(`${import.meta.env.BASE_URL}components/about/mission.html`),
+      fetch(`${import.meta.env.BASE_URL}components/about/teams.html`),
+      fetch(`${import.meta.env.BASE_URL}components/about/gallery.html`),
     ]);
 
     const bannerHtml  = await bannerRes.text();

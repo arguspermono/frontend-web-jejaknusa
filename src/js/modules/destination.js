@@ -265,8 +265,8 @@ function buildCardHTML(dest) {
 export async function initDestinationComponents() {
   try {
     const [heroRes, contentRes] = await Promise.all([
-      fetch('/src/components/destination/hero.html'),
-      fetch('/src/components/destination/content.html'),
+      fetch(`${import.meta.env.BASE_URL}components/destination/hero.html`),
+      fetch(`${import.meta.env.BASE_URL}components/destination/content.html`),
     ]);
 
     const heroHtml    = await heroRes.text();

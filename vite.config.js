@@ -3,6 +3,7 @@ import { resolve } from 'path';
 
 export default defineConfig({
   root: './',
+  base: '/frontend-web-jejaknusa/',
   build: {
     outDir: 'dist',
     rollupOptions: {

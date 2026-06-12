@@ -1,10 +1,10 @@
 export async function initHomeComponents() {
   try {
     const [heroRes, latestStoriesRes, travelPromoRes, featuredDestRes] = await Promise.all([
-      fetch('/src/components/home/hero.html'),
-      fetch('/src/components/home/latest-stories.html'),
-      fetch('/src/components/home/travel-promotion.html'),
-      fetch('/src/components/home/featured-destination.html')
+      fetch(`${import.meta.env.BASE_URL}components/home/hero.html`),
+      fetch(`${import.meta.env.BASE_URL}components/home/latest-stories.html`),
+      fetch(`${import.meta.env.BASE_URL}components/home/travel-promotion.html`),
+      fetch(`${import.meta.env.BASE_URL}components/home/featured-destination.html`)
     ]);
 
     const heroHtml = await heroRes.text();

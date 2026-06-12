@@ -419,8 +419,8 @@ export async function initArticleComponents() {
 
   try {
     const [headerRes, contentRes] = await Promise.all([
-      fetch('/src/components/article/header.html'),
-      fetch('/src/components/article/content.html'),
+      fetch(`${import.meta.env.BASE_URL}components/article/header.html`),
+      fetch(`${import.meta.env.BASE_URL}components/article/content.html`),
     ]);
 
     const headerHtml  = await headerRes.text();
