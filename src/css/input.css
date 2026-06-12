@@ -1,0 +1,148 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* =============================================
+   JejakNusa — Global Custom Styles
+   Extracted from existing HTML inline styles.
+   Shared across ALL pages.
+   ============================================= */
+
+/* ----- Base ----- */
+@layer base {
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  /* Smooth transitions for dark mode */
+  * {
+    @apply transition-colors duration-300 ease-in-out;
+  }
+
+  /* Custom scrollbar — JejakNusa palette */
+  ::-webkit-scrollbar {
+    width: 7px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #EDE9DF;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #4A5320;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #2E3314;
+  }
+  .dark ::-webkit-scrollbar-track {
+    background: #111827;
+  }
+  .dark ::-webkit-scrollbar-thumb {
+    background: #6B7A2A;
+  }
+  .dark ::-webkit-scrollbar-thumb:hover {
+    background: #8B9C38;
+  }
+  /* Firefox scrollbar */
+  * {
+    scrollbar-color: #4A5320 #EDE9DF;
+    scrollbar-width: thin;
+  }
+  .dark * {
+    scrollbar-color: #6B7A2A #111827;
+  }
+}
+
+/* ----- Components ----- */
+@layer components {
+  /* Primary button */
+  .btn-primary {
+    @apply inline-flex items-center gap-2 px-6 py-3
+           bg-brand-red hover:bg-red-700 text-white
+           rounded-lg font-semibold text-sm
+           transition-all hover:scale-105
+           shadow-lg shadow-red-500/30;
+  }
+
+  /* Nav link underline effect */
+  .nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #E53935;
+    transition: width 0.3s ease;
+  }
+  .nav-link:hover::after,
+  .nav-link.active::after {
+    width: 100%;
+  }
+
+  /* Hero gradient overlay */
+  .hero-overlay {
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.15) 0%,
+      rgba(0, 0, 0, 0.55) 60%,
+      rgba(0, 0, 0, 0.75) 100%
+    );
+  }
+
+  /* Banner gradient overlay */
+  .banner-overlay {
+    background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.7) 0%,
+      rgba(0, 0, 0, 0.3) 60%,
+      rgba(0, 0, 0, 0.05) 100%
+    );
+  }
+
+  /* Story card hover zoom */
+  .story-card:hover .story-img {
+    transform: scale(1.05);
+  }
+  .story-img {
+    transition: transform 0.4s ease;
+  }
+
+  /* Mobile menu animation */
+  #mobile-menu {
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+  }
+  #mobile-menu.open {
+    max-height: 400px;
+    opacity: 1;
+  }
+
+  /* Hide scrollbar (used by category tabs) */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Scroll reveal animation */
+  .reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Destination card entrance animation */
+  @keyframes cardAppear {
+    from { opacity: 0; transform: translateY(18px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .dest-card {
+    animation: cardAppear 0.4s ease both;
+  }
+}

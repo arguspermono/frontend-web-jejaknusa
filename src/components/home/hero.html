@@ -1,0 +1,42 @@
+<section id="hero" class="pt-24 pb-8 px-4 sm:px-6 lg:px-8 bg-[#F8F6F0] dark:bg-gray-950 transition-colors duration-300">
+    <div class="relative w-full h-[80vh] min-h-[600px] rounded-[2rem] overflow-hidden shadow-2xl">
+        <!-- Background Image (Bromo) -->
+        <img src="/src/assets/img/Bromo1.jpeg" alt="Mount Bromo"
+            class="absolute inset-0 w-full h-full object-cover object-center" />
+
+        <!-- Gradient Overlay to make bottom text readable -->
+        <div class="absolute inset-0 bg-gradient-to-t dark:from-black/80 dark:via-black/20 to-transparent from-gray-500/80 via-grayfrom-gray-500/20 to-transparent"></div>
+
+        <!-- BROMO Text (Centered) -->
+        <div class="absolute inset-0 flex flex-col items-center justify-center pointer-events-none pb-16">
+            <h1
+                class="text-[5rem] sm:text-9xl lg:text-[13rem] font-black text-black dark:text-white italic uppercase leading-none tracking-tighter mix-blend-normal">
+                BROMO<span
+                    class="text-xl sm:text-2xl lg:text-3xl ml-1 align-baseline not-italic tracking-normal">MT</span>
+            </h1>
+        </div>
+
+        <!-- Bottom Left Content -->
+        <div class="absolute bottom-0 left-0 w-full p-6 sm:p-10 lg:p-16 z-10 pointer-events-auto">
+            <div class="max-w-2xl">
+                <p class="text-sm sm:text-base lg:text-lg text-white leading-relaxed font-medium mb-6"
+                    data-i18n="hero_desc">
+                    Temukan destinasi menakjubkan di seluruh Gunung Bromo dengan JejakNusa. <br
+                        class="hidden sm:block" />
+                    wawasan lokal dan perencanaan tanpa repot, semuanya dalam satu platform.
+                </p>
+
+                <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+                    <button
+                        class="px-8 py-3.5 bg-white text-gray-900 font-bold rounded-full hover:bg-gray-100 transition-colors shadow-lg whitespace-nowrap">
+                        Plant Our Trip
+                    </button>
+                    <button
+                        class="px-8 py-3.5 bg-white/10 backdrop-blur-md border-[1.5px] border-white/80 text-white font-bold rounded-full hover:bg-white/20 transition-colors whitespace-nowrap">
+                        Explore Destinations
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
