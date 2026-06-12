@@ -12,7 +12,7 @@ export function initNavbar() {
         <div class="flex items-center justify-between h-20">
           
           <!-- Logo -->
-          <a href="home.html" class="flex items-center gap-2 group">
+          <a href="index.html" class="flex items-center gap-2 group">
             <div class="w-9 h-9 bg-brand-red rounded-full flex items-center justify-center shadow-md group-hover:scale-110 transition-transform">
               <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
@@ -27,7 +27,7 @@ export function initNavbar() {
 
           <!-- Desktop Nav Links -->
           <div class="hidden md:flex items-center gap-8">
-            <a href="home.html" class="nav-link text-sm font-semibold text-gray-900 dark:text-white" data-i18n="nav_home">Beranda</a>
+            <a href="index.html" class="nav-link text-sm font-semibold text-gray-900 dark:text-white" data-i18n="nav_home">Beranda</a>
             <a href="destinations.html" class="nav-link text-sm font-semibold text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors" data-i18n="nav_destination">Destinasi</a>
             <a href="about_us.html" class="nav-link text-sm font-semibold text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors" data-i18n="nav_about">Tentang Kami</a>
           </div>
@@ -80,7 +80,7 @@ export function initNavbar() {
       <!-- Mobile Menu -->
       <div id="mobile-menu" class="md:hidden bg-[#F8F6F0] dark:bg-black border-t border-gray-200 dark:border-gray-800">
         <div class="px-4 py-4 flex flex-col gap-4">
-          <a href="home.html" class="nav-link text-sm font-semibold text-gray-600 dark:text-gray-300" data-i18n="nav_home">Beranda</a>
+          <a href="index.html" class="nav-link text-sm font-semibold text-gray-600 dark:text-gray-300" data-i18n="nav_index">Beranda</a>
           <a href="destinations.html" class="nav-link text-sm font-semibold text-gray-600 dark:text-gray-300" data-i18n="nav_destination">Destinasi</a>
           <a href="about_us.html" class="nav-link text-sm font-semibold text-gray-600 dark:text-gray-300" data-i18n="nav_about">Tentang Kami</a>
           <div class="flex items-center gap-4 pt-4 mt-2 border-t border-gray-200 dark:border-gray-800">
@@ -99,7 +99,7 @@ export function initNavbar() {
 
   // Set Active Link based on pathname
   const rawPath = window.location.pathname.split('/').pop();
-  let currentPath = (!rawPath || rawPath === 'index.html') ? 'home.html' : rawPath;
+  let currentPath = (!rawPath || rawPath === 'index.html') ? 'index.html' : rawPath;
   if (currentPath === 'about.html') {
     currentPath = 'about_us.html';
   }

@@ -14,10 +14,10 @@ export function initFooter() {
           <div>
             <h4 class="text-base font-bold text-gray-900 dark:text-white mb-5">Company</h4>
             <ul class="space-y-3">
-              <li><a href="about_us.html" class="text-sm text-gray-700 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">Abaout</a></li>
+              <li><a href="about_us.html" class="text-sm text-gray-700 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">About</a></li>
               <li><a href="#" class="text-sm text-gray-700 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">Management team</a></li>
               <li><a href="#" class="text-sm text-gray-700 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">Corporate</a></li>
-              <li><a href="about_us.html" class="text-sm text-gray-700 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">Contact Us</a></li>
+              <li><a href="about_us.html" class="text-sm text-gray-700 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">About Us</a></li>
               <li><a href="#" class="text-sm text-gray-700 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">Careers</a></li>
             </ul>
           </div>

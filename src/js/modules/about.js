@@ -1,4 +1,5 @@
 // src/js/modules/about.js
+import { BASE_URL } from '../utils/base-url.js';
 
 export async function initAboutComponents() {
   try {
@@ -24,6 +25,10 @@ export async function initAboutComponents() {
     if (teamsEl) teamsEl.outerHTML = teamsHtml;
     if (galleryEl) galleryEl.outerHTML = galleryHtml;
 
+    // SET IMAGE URLS AFTER COMPONENTS ARE INSERTED
+    document.querySelectorAll('[data-img]').forEach(img => {
+      img.src = BASE_URL + img.dataset.img;
+    });
   } catch (error) {
     console.error('Error loading about components:', error);
   }

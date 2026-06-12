@@ -1,5 +1,7 @@
 // src/js/modules/article.js
 import { applyTranslations } from '../utils/translations.js';
+import { BASE_URL } from '../utils/base-url.js';
+
 
 // ─── Shared card images (for related section) ─────────────────────────────────
 const CARD_IMAGES = {
@@ -443,6 +445,11 @@ export async function initArticleComponents() {
       // Re-show reveal elements in the re-rendered body (user is already viewing them)
       document.querySelectorAll('#art-body .reveal').forEach(el => el.classList.add('visible'));
     };
+
+    // SET IMAGE URLS AFTER COMPONENTS ARE INSERTED
+    document.querySelectorAll('[data-img]').forEach(img => {
+      img.src = BASE_URL + img.dataset.img;
+    });
 
   } catch (err) {
     console.error('Error loading article components:', err);

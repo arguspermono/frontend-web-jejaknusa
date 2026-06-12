@@ -1,5 +1,7 @@
 // src/js/modules/destination-detail.js
 import { applyTranslations } from '../utils/translations.js';
+import { BASE_URL } from '../utils/base-url.js';
+
 
 // ─── Destination Detail Data ───────────────────────────────────────────────────
 const DETAILS = {
@@ -859,6 +861,11 @@ export async function initDestinationDetailComponents() {
         document.querySelectorAll('#dest-detail-body .reveal').forEach(el => el.classList.add('visible'));
       }
     };
+
+    // SET IMAGE URLS AFTER COMPONENTS ARE INSERTED
+    document.querySelectorAll('[data-img]').forEach(img => {
+      img.src = BASE_URL + img.dataset.img;
+    });
   } catch (err) {
     console.error('Failed to load destination detail components:', err);
   }

@@ -200,7 +200,7 @@ export const translations = {
     // --- Navbar ---
     nav_home: 'Home',
     nav_destination: 'Destinations',
-    nav_about: 'Contact Us',
+    nav_about: 'About Us',
     toggle_mode: 'Dark Mode',
 
     // --- Home Page ---
@@ -224,7 +224,7 @@ export const translations = {
     read_more: 'Read More',
 
     // --- About Us Page ---
-    about_page_title: 'Contact Us',
+    about_page_title: 'About Us',
     about_page_sub: 'We are ready to help your dream journey. Feel free to reach out to our team.',
     about_label: 'About JejakNusa',
     about_heading: 'Trusted Travel Platform to Explore the Archipelago',
@@ -244,7 +244,7 @@ export const translations = {
     cmo_desc: 'Developing digital marketing strategies to reach more Indonesian travelers.',
     contact_label: 'Contact',
     contact_heading: "Let's Connect with Us",
-    contact_desc: 'Have questions, suggestions, or want to collaborate with us? Feel free to contact us.',
+    contact_desc: 'Have questions, suggestions, or want to collaborate with us? Feel free to about us.',
     addr_title: 'Address',
     phone_title: 'Phone',
     form_name: 'Full Name',
@@ -366,7 +366,7 @@ export const translations = {
     footer_about: 'About Us',
     footer_team: 'Meet Our Team',
     footer_careers: 'Careers',
-    footer_contact: 'Contact Us',
+    footer_contact: 'About Us',
     footer_sitemap: 'Sitemap',
     footer_news: 'News & Event',
     footer_events: 'Events',

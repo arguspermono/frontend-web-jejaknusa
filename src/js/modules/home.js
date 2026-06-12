@@ -1,3 +1,5 @@
+import { BASE_URL } from '../utils/base-url.js';
+
 export async function initHomeComponents() {
   try {
     const [heroRes, latestStoriesRes, travelPromoRes, featuredDestRes] = await Promise.all([
@@ -23,6 +25,12 @@ export async function initHomeComponents() {
 
     const featuredDestPlaceholder = document.getElementById('featured-destination-placeholder');
     if (featuredDestPlaceholder) featuredDestPlaceholder.outerHTML = featuredDestHtml;
+
+    // SET IMAGE URLS AFTER COMPONENTS ARE INSERTED
+    document.querySelectorAll('[data-img]').forEach(img => {
+      img.src = BASE_URL + img.dataset.img;
+    });
+
   } catch (error) {
     console.error("Error loading home components:", error);
   }

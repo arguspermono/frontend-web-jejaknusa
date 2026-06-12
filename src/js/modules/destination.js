@@ -1,5 +1,6 @@
 // src/js/modules/destination.js
 import { applyTranslations } from '../utils/translations.js';
+import { BASE_URL } from '../utils/base-url.js';
 
 // ─── Destination Data ──────────────────────────────────────────────────────────
 const DESTINATIONS = [
@@ -283,6 +284,10 @@ export async function initDestinationComponents() {
     renderCards();
     applyTranslations(lang);
 
+    // SET IMAGE URLS AFTER COMPONENTS ARE INSERTED
+    document.querySelectorAll('[data-img]').forEach(img => {
+      img.src = BASE_URL + img.dataset.img;
+    });
   } catch (err) {
     console.error('Error loading destination components:', err);
   }
