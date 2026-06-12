@@ -1,0 +1,69 @@
+<!-- Destination Detail — Hero -->
+<section id="dest-detail-hero"
+         class="relative min-h-[65vh] bg-gray-900 bg-cover bg-center flex flex-col justify-end">
+
+  <!-- Gradient overlay -->
+  <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/45 to-black/20 pointer-events-none"></div>
+
+  <!-- Back button (top) -->
+  <div class="absolute top-24 left-0 right-0 z-10">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <a href="destinations.html"
+         class="inline-flex items-center gap-2 text-white/70 hover:text-white text-sm font-semibold transition-colors group">
+        <svg class="w-4 h-4 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        <span id="dest-back-label">Destinasi</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Hero content -->
+  <div class="relative z-10 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 pb-12 pt-44 w-full">
+
+    <!-- Category badge -->
+    <span id="dest-hero-category"
+          class="inline-block text-[0.6rem] font-black uppercase tracking-widest
+                 bg-[#4A5320]/90 backdrop-blur-sm text-white px-3 py-1.5 rounded-full mb-4">
+    </span>
+
+    <!-- Name -->
+    <h1 id="dest-hero-name"
+        class="text-3xl sm:text-4xl lg:text-[2.75rem] font-black text-white leading-tight tracking-tight mb-3">
+    </h1>
+
+    <!-- Tagline -->
+    <p id="dest-hero-tagline" class="text-white/70 text-base sm:text-lg mb-7 font-medium leading-snug max-w-xl"></p>
+
+    <!-- Location + meta row -->
+    <div class="flex flex-wrap items-center gap-5">
+
+      <!-- Location -->
+      <div class="flex items-center gap-1.5 text-white/75 text-sm font-medium">
+        <svg class="w-4 h-4 text-[#c5d06a] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+          <path fill-rule="evenodd"
+                d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                clip-rule="evenodd"/>
+        </svg>
+        <span id="dest-hero-location"></span>
+      </div>
+
+      <!-- Duration -->
+      <div class="flex items-center gap-1.5 text-white/75 text-sm font-medium">
+        <svg class="w-4 h-4 text-[#c5d06a] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+        </svg>
+        <span id="dest-hero-duration"></span>
+      </div>
+
+      <!-- Price -->
+      <div class="flex items-baseline gap-1.5">
+        <span id="dest-hero-from" class="text-white/55 text-xs"></span>
+        <span id="dest-hero-price" class="text-[#c5d06a] font-black text-xl"></span>
+      </div>
+
+    </div>
+
+  </div>
+</section>
