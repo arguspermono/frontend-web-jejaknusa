@@ -11,7 +11,7 @@ const DESTINATIONS = [
     category: 'mountain',
     duration: 3,
     price: '$125',
-    image: '/src/assets/img/Bromo1.jpeg',
+    image: 'img/Bromo1.jpeg',
     descKey: 'bromo_desc',
   },
   {
@@ -21,7 +21,7 @@ const DESTINATIONS = [
     category: 'beach',
     duration: 5,
     price: '$250',
-    image: '/src/assets/img/RajaAmpat.png',
+    image: 'img/RajaAmpat.png',
     descKey: 'raja_desc',
   },
   {

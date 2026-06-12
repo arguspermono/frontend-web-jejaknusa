@@ -6,7 +6,7 @@ import { BASE_URL } from '../utils/base-url.js';
 // ─── Destination Detail Data ───────────────────────────────────────────────────
 const DETAILS = {
   'bromo': {
-    image: '/src/assets/img/Bromo1.jpeg',
+    image: 'img/Bromo1.jpeg',
     durationDays: 3,
     price: '$125',
     category: { id: 'Gunung', en: 'Mountain' },
@@ -75,7 +75,7 @@ const DETAILS = {
   },
 
   'raja-ampat': {
-    image: '/src/assets/img/RajaAmpat.png',
+    image: 'img/RajaAmpat.png',
     durationDays: 5,
     price: '$250',
     category: { id: 'Pantai', en: 'Beach' },
