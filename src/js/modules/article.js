@@ -90,7 +90,7 @@ const ARTICLES = {
     date: 'Des 32, 2025',
     readTime: { id: '214 Menit', en: '214 Minutes' },
     image: 'https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=1200&q=80&auto=format&fit=crop',
-    author: 'Rizky Pratama',
+    author: 'Rzainurtanto',
     authorInitial: 'R',
     views: '8.7K',
     related: [1, 3, 4],
@@ -163,7 +163,7 @@ const ARTICLES = {
     date: 'Des 25, 2025',
     readTime: { id: '141 Menit', en: '141 Minutes' },
     image: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=1200&q=80&auto=format&fit=crop',
-    author: 'Sari Dewi',
+    author: 'Elsa Hayuningrat',
     authorInitial: 'S',
     views: '6.1K',
     related: [1, 2, 4],
@@ -236,7 +236,7 @@ const ARTICLES = {
     date: 'Nov 14, 2025',
     readTime: { id: '62 Menit', en: '62 Minutes' },
     image: 'https://images.unsplash.com/photo-1501555088652-021faa106b9b?w=1200&q=80&auto=format&fit=crop',
-    author: 'Bima Saputra',
+    author: 'Arya Bagus',
     authorInitial: 'B',
     views: '3.8K',
     related: [1, 2, 3],
@@ -438,8 +438,8 @@ export async function initArticleComponents() {
     // Re-populate article content whenever language is switched
     const prevSetLang = window.setLang;
     window.setLang = (newLang) => {
-      prevSetLang(newLang);
       populateArticle(article, newLang);
+      prevSetLang(newLang);
       // Re-show reveal elements in the re-rendered body (user is already viewing them)
       document.querySelectorAll('#art-body .reveal').forEach(el => el.classList.add('visible'));
     };

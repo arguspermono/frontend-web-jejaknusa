@@ -760,17 +760,35 @@ function buildBodyHTML(detail, lang) {
     </section>`;
 
   // ── Transport ──
+  const mapQuery = encodeURIComponent(c.name + ', ' + c.location);
   const transport = `
     <section class="mb-12 reveal">
       <h2 class="text-2xl font-black text-gray-900 dark:text-white mb-4 tracking-tight">${L.transport}</h2>
       <div class="bg-white dark:bg-gray-900 rounded-xl p-5
-                  border border-gray-100 dark:border-gray-800 flex items-start gap-4">
-        <svg class="w-5 h-5 text-[#4A5320] dark:text-[#c5d06a] flex-shrink-0 mt-0.5"
-             fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
-        </svg>
-        <p class="text-[0.875rem] text-gray-600 dark:text-gray-400 leading-relaxed">${c.transport}</p>
+                  border border-gray-100 dark:border-gray-800 flex flex-col gap-5">
+        <div class="flex items-start gap-4">
+          <svg class="w-5 h-5 text-[#4A5320] dark:text-[#c5d06a] flex-shrink-0 mt-0.5"
+               fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
+          </svg>
+          <p class="text-[0.875rem] text-gray-600 dark:text-gray-400 leading-relaxed">${c.transport}</p>
+        </div>
+        <div class="w-full h-72 sm:h-80 rounded-lg overflow-hidden border border-gray-200 dark:border-gray-700">
+          <iframe 
+            width="100%" 
+            height="100%" 
+            src="https://maps.google.com/maps?q=${mapQuery}&t=&z=10&ie=UTF8&iwloc=&output=embed" 
+            frameborder="0" 
+            scrolling="no" 
+            marginheight="0" 
+            marginwidth="0"
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
       </div>
     </section>`;
 
