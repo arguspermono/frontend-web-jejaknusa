@@ -71,6 +71,16 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // Initialize Destination Detail Components
+  if (window.location.pathname.endsWith('destination-detail.html')) {
+    import('./modules/destination-detail.js').then(module => {
+      module.initDestinationDetailComponents().then(() => {
+        scrollReveal();
+        applyTranslations(currentLang);
+      });
+    });
+  }
+
   // Initialize About Us Components
   if (window.location.pathname.endsWith('about_us.html') || window.location.pathname.endsWith('about.html')) {
     import('./modules/about.js').then(module => {

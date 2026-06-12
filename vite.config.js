@@ -11,6 +11,7 @@ export default defineConfig({
         about_us: resolve(__dirname, 'about_us.html'),
         destinations: resolve(__dirname, 'destinations.html'),
         article: resolve(__dirname, 'article.html'),
+        destination_detail: resolve(__dirname, 'destination-detail.html'),
       },
     },
   },
