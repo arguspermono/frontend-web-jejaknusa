@@ -2,7 +2,7 @@ import { defineConfig } from 'vite';
 import { resolve } from 'path';
 
 export default defineConfig({
-  base: '/web_frontend_jejaknusa/',
+  base: '/frontend_web_jejaknusa/',
   build: {
     rollupOptions: {
       input: {
